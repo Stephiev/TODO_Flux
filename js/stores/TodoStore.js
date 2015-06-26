@@ -30,7 +30,6 @@ function create(text) {
   _todos[id] = {
     id: id,
     complete: false,
-    uppercase: false,
     text: text,
     lCase: null
   };
