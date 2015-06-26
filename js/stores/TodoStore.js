@@ -84,8 +84,7 @@ function alternateCase(id) {
     currentTodo.lCase = "upper";
 
   } else if (currentTodo.lCase === "upper") {
-    var titled = currentTodo.text.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
-    currentTodo.text = titled
+    currentTodo.text = currentTodo.text.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
     currentTodo.lCase = "titleCase";
 
   } else if (currentTodo.lCase === "titleCase") {
